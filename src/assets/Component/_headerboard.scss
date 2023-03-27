@@ -1,0 +1,45 @@
+.ant-layout-header {
+  .header-home {
+    .header {
+        display: flex;
+        justify-content:flex-start;
+        gap: 10px;
+      .logo-header {
+        img {
+        }
+      }
+      .signin {
+        .signinbutton {
+          
+          .header-btn {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .manguoidung {
+                font-size: 15px;
+                color:darkorange;
+            }
+            .ant-select {
+                margin-left: 10px;
+              .ant-select-selector {
+                border: none;
+                .ant-select-selection-item {
+                    font-weight: 700;
+                    font-size: 20px;
+                  }
+                .ant-select-selection-search {
+                 
+                }
+              }
+              .ant-select-arrow {
+                .anticon {
+                   display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

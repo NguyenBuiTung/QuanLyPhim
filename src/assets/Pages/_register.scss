@@ -1,0 +1,13 @@
+.register{
+ .ant-form{
+    .ant-form-item{
+        .ant-row{
+            .ant-col{
+                .ant-form-item-required::before{
+                  display: none;
+                }
+            }
+        }
+    }
+ }
+}
