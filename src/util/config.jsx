@@ -53,8 +53,9 @@ export const settings = {
     }
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
   },
-  delete_cookie:(name)=> {
-    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  delete_cookie: (name) => {
+    document.cookie =
+      name + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
   },
   getCookie: (name) => {
     var nameEQ = name + "=";
@@ -74,7 +75,7 @@ export const settings = {
 //Setup hằng số, 1 số hàm xử lý chung, ...
 
 export const TOKEN_CYBERSOFT =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAzMyIsIkhldEhhblN0cmluZyI6IjExLzA0LzIwMjMiLCJIZXRIYW5UaW1lIjoiMTY4MTE3MTIwMDAwMCIsIm5iZiI6MTY1Mjg5MzIwMCwiZXhwIjoxNjgxMzE4ODAwfQ.j4z4TCOvHfc7Iq372RxnnLGogFR3Yf1bukUxTce5WTc";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAwMSIsIkhldEhhblN0cmluZyI6IjMwLzA5LzIwMzEiLCJIZXRIYW5UaW1lIjoiMTk0ODQ5MjgwMDAwMCIsIm5iZiI6MTYwMTIyNjAwMCwiZXhwIjoxOTQ4NjQwNDAwfQ.4l-eTzlgVnFczfvc2Or7BNPOcaesY3Kwc8RoNm-o-6M";
 export const http = axios.create({
   baseURL: "https://movienew.cybersoft.edu.vn", //tất cả các hàm khi gọi api đều sử dụng domain này
   timeout: 30000, //nếu request mất 5 phút mà không nhận được kết quả thì huỷ request

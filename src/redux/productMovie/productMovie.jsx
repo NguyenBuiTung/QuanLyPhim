@@ -51,10 +51,4 @@ export const deleteMovieApi = (maPhim) => {
     dispatch(action);
   };
 };
-export const uploadApi = (maPhim) => {
-  return async (dispatch) => {
-    await http.delete(`vn/api/QuanLyPhim/ThemPhimUploadHinh`,maPhim);
-    const action = getDataMovieApi();
-    dispatch(action);
-  };
-};
+
